@@ -15,10 +15,10 @@ body {
   padding-top: 0;
   overflow: auto;
 }
-/* header ul {
+header ul {
   display: flex;
   justify-content: space-around;
-} */
+}
 
 header a {
   color: black;
@@ -61,6 +61,8 @@ footer ul {
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -333,15 +335,6 @@ a {
 }
 
 @media (min-width: 992px) {
-  .finalHeader {
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    border-radius: 0;
-    z-index: 1;
-  }
-
   .nav_media {
     display: none;
   }
@@ -350,5 +343,13 @@ a {
 @media (max-width: 992px) {
   header {
     display: flex;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  h1 {
+    justify-self: center;
   }
 }
