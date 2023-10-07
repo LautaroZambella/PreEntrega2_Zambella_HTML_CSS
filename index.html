@@ -28,6 +28,9 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   </head>
   <body>
     <div>
@@ -74,47 +77,6 @@
             </ul>
           </nav>
         </div>
-        <!-- <div class="modificar">
-          <a href="../index.html" class="noBackground"
-            ><img src="../images/icono_libroteca.png" alt="Icono Libroteca"
-          /></a>
-          <div class="titulo"><h1>LIBROTECA</h1></div>
-          <div class="dropdown nav_media">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Dropdown
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <button class="dropdown-item" type="button">Action</button>
-              </li>
-              <li>
-                <button class="dropdown-item" type="button">
-                  Another action
-                </button>
-              </li>
-              <li>
-                <button class="dropdown-item" type="button">
-                  Something else here
-                </button>
-              </li>
-            </ul>
-          </div>
-          <nav>
-            <ul>
-              <li class="libros"><a href="./pages/libros.html">Libros</a></li>
-              <li class="auto"><a href="./pages/autores.html">Autores</a></li>
-              <li class="saga"><a href="./pages/sagas.html">Sagas</a></li>
-              <li class="rey">
-                <a href="./pages/caminodelosreyes.html">Libro 10/10</a>
-              </li>
-            </ul>
-          </nav>
-        </div> -->
       </header>
       <main>
         <div class="indexLibro">
@@ -137,13 +99,88 @@
             </p>
           </div>
         </div>
-        <div>
+        <div class="toCenter">
           <h2>LIBROS</h2>
-          <img src="./images/resplandor.jpg" alt="El resplandor" />
+          <div id="carouselExampleCaptions" class="carousel slide slider"> 
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/resplandor.jpg" class="d-block w-100" alt="El resplandor portada">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>El resplandor</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/camino_reyes.JPG" class="d-block w-100" alt="Resetea tus intestinos portada">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Way of kings</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/ojo_del_mundo.jpg" class="d-block w-100" alt="El ojo del mundo portada">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>El ojo del mundo</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div>
+        <div class="toCenter">
           <h2>AUTORES</h2>
-          <img src="./images/brandon_sanderson.jpg" alt="Brandon Sanderson" />
+          <div id="carouselExampleCaption" class="carousel slide slider">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/agatha_christie.png" class="d-block w-100" alt="Autora Agatha Christie">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Agatha Christie</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/juan_autor.jpeg" class="d-block w-100" alt="Autor Juan">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Juan Romero</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/robert_jordan.jpg" class="d-block w-100" alt="Autor Robert Jordan">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Robert Jordan</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/brandon_sanderson.jpg" class="d-block w-100" alt="Autor Brandon Sanderson">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Brandon Sanderson</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaption" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaption" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
         <div>
           <h2>SAGAS</h2>
