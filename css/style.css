@@ -22,7 +22,6 @@ header ul {
 
 header a {
   color: black;
-  background-color: #dc500a74;
   border-radius: 10px;
 }
 
@@ -343,7 +342,6 @@ a {
   flex-direction: column;
   align-items: center;
   font-family: "Poppins", sans-serif;
-  color: rgb(0, 0, 0) !important;
 }
 
 .toCenter h2 {
@@ -353,6 +351,22 @@ a {
 .colorear {
   color: #7bb10f;
 }
+
+.miBoton {
+  background-color: #1f1300;
+  color: rgb(250, 235, 215);
+  border: none;
+  font-family: "Lato", sans-serif;
+}
+
+.miBoton:hover {
+  background-color: rgb(173, 159, 137);
+}
+
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+
 @media (min-width: 992px) {
   .nav_media {
     display: none;
