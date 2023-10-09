@@ -373,3 +373,29 @@ a {
     align-self: center;
   }
 }
+
+@media (max-width: 420px) {
+  .slider {
+    max-width: 300px;
+  }
+
+  .imageLink {
+    width: 300px;
+  }
+  #sagas img {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1290px) {
+  #sagas {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 650px) and (min-width: 421px) {
+  #sagas img {
+    width: 400px;
+  }
+}
